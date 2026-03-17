@@ -109,11 +109,11 @@ export default function App() {
   const labelStyle = { fontSize: '12px', fontWeight: '600', color: '#555', display: 'block', marginBottom: '5px', textTransform: 'uppercase', letterSpacing: '0.5px' }
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f8fafc', fontFamily: "'DM Sans', -apple-system, sans-serif" }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#f8fafc', fontFamily: "'DM Sans', -apple-system, sans-serif", overflowX: 'hidden' }}>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
       {/* Header */}
-      <div style={{ backgroundColor: '#111827', padding: '18px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={{ backgroundColor: '#111827', padding: '18px 30px', display: 'flex', alignItems: 'center', justifyContent: 'space-between',flexWrap: 'wrap', gap: '10px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{ backgroundColor: '#22c55e', borderRadius: '10px', width: '38px', height: '38px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px' }}>📦</div>
           <div>
@@ -136,7 +136,7 @@ export default function App() {
       <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '25px 20px' }}>
 
         {/* Stats */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px', marginBottom: '25px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px', marginBottom: '25px' }}>
           {[
             { label: 'Total productos', valor: productos.length, icon: '📦', color: '#3b82f6', bg: '#eff6ff' },
             { label: 'Stock OK', valor: ok, icon: '✅', color: '#22c55e', bg: '#f0fdf4' },

@@ -31,4 +31,12 @@ body {
   .form-grid {
     grid-template-columns: 1fr !important;
   }
+  * {
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 }
